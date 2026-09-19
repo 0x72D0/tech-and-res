@@ -142,10 +142,16 @@ REPLACE:law_debt_slavery = {
 				BPM_is_active_trigger = yes
 			}
 			ig:ig_landowners ?= {
-				remove_modifier = bpm_landowner_wary
+				if = {
+					limit = { has_modifier = bpm_landowner_wary }
+					remove_modifier = bpm_landowner_wary
+				}
 			}
 			ig:ig_reactionaries ?= {
-				remove_modifier = bpm_landowner_wary
+				if = {
+					limit = { has_modifier = bpm_landowner_wary }
+					remove_modifier = bpm_landowner_wary
+				}
 			}
 		}
 		else = {
@@ -267,10 +273,16 @@ REPLACE:law_slave_trade = {
 				BPM_is_active_trigger = yes
 			}
 			ig:ig_landowners ?= {
-				remove_modifier = bpm_landowner_wary
+				if = {
+					limit = { has_modifier = bpm_landowner_wary }
+					remove_modifier = bpm_landowner_wary
+				}
 			}
 			ig:ig_reactionaries ?= {
-				remove_modifier = bpm_landowner_wary
+				if = {
+					limit = { has_modifier = bpm_landowner_wary }
+					remove_modifier = bpm_landowner_wary
+				}
 			}
 		}
 		else = {
